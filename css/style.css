@@ -1,0 +1,36 @@
+p{
+    font-family: Georgia;
+    color: #3c2f2f;
+}
+
+
+#title{
+    font-family:Times New Roman;
+    text-align: center;
+    color: #3c2f2f;
+    font-weight: 200px;
+}
+
+
+.certifications{
+    font-family:Times New Roman;
+    text-align:left;
+    color: #3c2f2f;
+}
+
+body{
+    background-color: #fff4e6;
+}
+
+li{
+    color: #3c2f2f;
+    
+}
+
+img{
+    width: 475px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -34,3 +34,14 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+.header-box{
+    background-color:#854442;
+    width: auto;
+}
+
+.footer-box{
+    background-color:#3c2f2f;
+    width: auto;
+    height: 50px;
+}

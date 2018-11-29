@@ -12,27 +12,18 @@
             c.fillRect(100, 100, 100, 100);</script>
     
      <link rel="stylesheet" type="text/css" href="style.css">
-<style>
-#title{
-    font-family:Times New Roman;
-    text-align: center;
-    color: #3c2f2f;
-    font-weight: 200px;
-}
-</style>
     </head>
-<body>  
+<body>
+    
     <section class="main">
         <nav>
             <div class="button"></div>
         </nav>
-            <div class="sidebar toggleOff"></div>
-            <div class="nav_padding"> </div>    
-  
-<div class="header"> 
-        
-      <h1> Portfolio </h1>
-        
+            <div class="sidebar toggleOff">
+            </div>
+            <div class="nav_padding"> </div>      
+<div class="header">         
+      <h1> Portfolio </h1>        
         <h2> About Me </h2>
 <div class="wrapperHeader">
     <div class="aboutMe">    
@@ -58,39 +49,38 @@
       
     <div>
         <img class="computer" src="./Portfolio_files/software-developer-vs-software-engineer.jpg" alt="Computer monitor with lines of code displayed">
-    </div>
-        
+    </div>     
 <p class="imgText">In one and of the projects we did for my computer science course, we had to take an audio file and edit it. For my project, I took one of my favorite songs and took out a fairly large part of the song that I didn't particularly like and lowered the bass and increased the treble and volume of the song. The song is L'indecis - Soulful. </p>
-    <div align="middle">
+    <div class="contentWrapper">
         <audio controls> 
             <source src="Linde%CC%81cis%20-%20Soulful.mp3">
         </audio>
-     </div>
-        
+     </div>   
 <p class="imgText">In our computer science class we were asked to create a canvas element. A canvas element is used to draw graphics on a webpage. It shows four elements: a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text. </p>
-    <div align="middle">
-        <canvas id="myCanvas" width="600" height="300" style="border:3px solid #000000;">
-        </canvas>
-        
+    <div class="contentWrapper">
+        <canvas id="myCanvas" width="200" height="100" style="border:5px solid #d3d3d3;"> </canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello There",10,50);
+        </script>        
     </div>
-
 <p class="imgText"> In our computer science class we were asked to make an svg image. An svg is a "Scalable Vector Graphic". These types of images are useful when you're using it on things on varying sizes due to the fact that the resolution of the picture will not change depending on the scale of the image. </p>
-    <div align="middle">
+    <div class="contentWrapper">
        <svg width="250" height="200">
         <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
-        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+        style="fill:green;stroke:black;stroke-width:6;opacity:0.5" />
        </svg>
-   </div>    
-        
+   </div>            
 <p class="imgText">In my free time one of my favorite things to do is play video games with my friends. One of our most played and favorite games, is League of Legends. I've been playing this game for 5 years now and still play with friends from the day I started with. Here's a video on some of the basics of the game. </p>
-    <div align="middle">
+    <div class="contentWrapper">
         <iframe width="480" height="360"
 src="https://www.youtube.com/embed/BGtROJeMPeE?controls=1">
 </iframe>
     </div>
-
 <p class="imgText"> This was a report I wrote to display the differences between computer science, software engineering, and information technology and the relations that the fields under each category related to computer science </p>
-        <div align="middle">
+        <div class="contentWrapper">
         <embed src="Fields%20Report.pdf" width="800px" height="2100px" />
         </div>
     </div>

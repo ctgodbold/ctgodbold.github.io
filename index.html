@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang=en-US>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title> Portfolio </title>
@@ -14,7 +14,7 @@
      <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 <body>
-    
+<!Sidebar Navigation>    
     <section class="main">
         <nav>
             <div class="button"></div>
@@ -23,15 +23,17 @@
             </div>
             <div class="nav_padding"> </div>      
 <div class="header">         
-      <h1> Portfolio </h1>        
-        <h2> About Me </h2>
+      <h1> Cameron Godbold </h1>        
+        <h2> Portfolio </h2>
 <div class="wrapperHeader">
     <div class="aboutMe">    
+        <h2> About Me </h2>
             <p> My name is, Cameron Godbold, at the moment I am 19 years old. I am currently enrolled at <a href="https://www.fgcu.edu/">Florida Gulf Coast University</a> in my Sophomore year here. Here I am studying software engineering as my primary major. In the past I have always wanted to do something with computers and creating new programs and applications for people to find joy in. So I felt right at home with software engineering. Back in high school was when I had become certified in many programs that would aid me in furthering my knowledge of the field. 
             </p>   
-     
+<div id="textColumn">   
+    <span>
     <h3 class="certifications"> Certifications </h3>
-<ul> 
+<ul class="cert"> 
     <li> Microsoft Word </li>
     <li> Microsoft Powerpoint </li>
     <li> Microsoft Excel </li>
@@ -41,12 +43,38 @@
     <li> Adobe Indesign CC </li>
     <li> Adobe Dreamweaver CC </li>
 </ul>
+    </span>
+<span> 
+    <h3 class="pastProjects"> Past Projects </h3>
+<ul class="projects">
+    <li> <a href="https://scratch.mit.edu/projects/245156865/"> Scratch Project</a></li>
+</ul>
+</span>
+    
+</div>
         </div>  
-    </div>  
+    </div>    
 </div>
 <div class="wrapper">
     <div class="footer">
-      
+<!Everything is placed inside of multiple divs in order to keep everything organized> 
+<h2> Previous Projects </h2>
+        <div id="IPO">
+            First name: <input id="first_name">
+            Last name: <input id="last_name">
+                <button id="say"> Hello </button>  
+                <div id="result"></div>
+    <script>
+function say_hello() {
+    var fname = document.getElementById('first_name').value;
+    var lname = document.getElementById('last_name').value; 
+    var html = 'Hello ' + fname + ' ' + lname;
+    
+    document.getElementById('result').innerHTML = html;
+}
+document.getElementById('say').addEventListener('click', say_hello);
+    </script>        
+</div>
     <div>
         <img class="computer" src="./Portfolio_files/software-developer-vs-software-engineer.jpg" alt="Computer monitor with lines of code displayed">
     </div>     
@@ -83,6 +111,14 @@ src="https://www.youtube.com/embed/BGtROJeMPeE?controls=1">
         <div class="contentWrapper">
         <embed src="Fields%20Report.pdf" width="800px" height="2100px" />
         </div>
+    <div class="ender">
+<h3 class="contactMe"> <u> Contacts: </u> </h3>
+        <ul>
+            <li class="contactInfo"> <a href="https://www.linkedin.com/in/cameron-godbold-36a622176/"> Linkedin </a></li>
+            <li class="contactInfo"> Email: ctgodbold8186@eagle.fgcu.edu </li>
+        </ul>
+        </div>
+
     </div>
 </div>
         </section>
